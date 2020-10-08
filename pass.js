@@ -3,9 +3,9 @@
 *** Passed events with Debounce or Throttle.
 *** http://pass-js.github.io
 ***
-*** (c) Copyright 2020 Pass JS, Bozdev, Onur Boz, https://onurboz.com
+*** (c) Copyright 2020 Pass JS, Bozdev, Onur Boz, (https://onurboz.com)
 ***
-*** Released under the MIT License
+*** Released under the MIT License, (https://github.com/bozdev/pass.js/blob/main/LICENSE)
 **/
 
 (function (global, factory) 
