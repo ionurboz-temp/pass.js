@@ -3,9 +3,11 @@
 *** Passed events with Debounce or Throttle.
 *** http://pass-js.github.io
 ***
-*** (c) Copyright 2020 Pass JS, Bozdev, Onur Boz, (https://onurboz.com)
+***	@version 1.0.1
 ***
-*** Released under the MIT License, (https://github.com/bozdev/pass.js/blob/main/LICENSE)
+***	@author Onur Boz <hi.bozdev@gmail.com>
+*** @copyright (c) Copyright 2020 Pass JS, Bozdev, Onur Boz, (https://onurboz.com)
+*** @license Released under the MIT License, (https://github.com/bozdev/pass.js/blob/main/LICENSE)
 **/
 
 (function (global, factory) 
@@ -23,8 +25,10 @@
 	*** Method debounce, pass.debounce()
 	*** @public
 	*** @param	{Function}	callback	The callback to run
-	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
-	*** @param	{Object}		options		The settings object
+	*** @param	{number}		wait			The waiting time in (ms), [optional],	default: 200
+	*** @param	{Object}		options		The settings object, structure is: { leading: true, trailing: true }
+	***																leading: 	{boolean}	Trigger at the leading edge, [optional], default: true
+	***																trailing: {boolean} Trigger on the last edge, [optional], default: true
 	*** @return	{Function}						Returns null if not apply callback
 	**/
 	pass.debounce = function(callback, wait, options) 
