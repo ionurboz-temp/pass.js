@@ -20,7 +20,7 @@
 	var pass = {};
 
 	/**
-	*** debounce
+	*** debounce function
 	**/
 
 	pass.debounce = function(callback, wait, options) 
@@ -57,7 +57,7 @@
 	};
 
 	/**
-	*** throttle
+	*** throttle function
 	**/
 
 	pass.throttle = function(callback, wait, options) 
