@@ -37,15 +37,12 @@
     var timeout = null;
 
     wait || (wait = 200);
-
     options || (options = {});
 
     function later()
     {
       timeout = null;
-
       (options.leading === false || options.trailing !== false) && (result = callback.apply(context, args));
-
       !timeout && (context = args = null);      
     }
 
@@ -53,15 +50,10 @@
     {
       args = arguments;
       context = this;
-
       call = options.leading !== false && !timeout;
-
       clearTimeout(timeout);
-
       timeout = setTimeout(later, wait);
-
       call && (result = callback.apply(context, args));
-
       return result;
     }
   };
@@ -84,16 +76,13 @@
     var previous = 0;
 
     wait || (wait = 200);
-
     options || (options = {});
 
     function later()
     {
       previous = options.leading === false ? 0 : Date.now();
-
       timeout = null;
       result = callback.apply(context, args);
-
       !timeout && (context = args = null);
     }
 
@@ -103,7 +92,6 @@
 
       args = arguments;
       context = this;
-
       !previous && options.leading === false && (previous = now);
 
       var remaining = wait - (now - previous);
@@ -118,7 +106,6 @@
 
         previous = now;
         result = callback.apply(context, args);
-
         !timeout && (context = args = null);
       }
 
