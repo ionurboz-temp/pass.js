@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Pass.js 1.0.1 | Passed events with Debounce or Throttle.</title>
-	<script src="pass.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/pass.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<script>
-		document.addEventListener('mousemove', pass.throttle(function(){
+		document.addEventListener('mousemove', pass.debounce(function(){
 			document.body.appendChild(document.createTextNode('Mouse Event'));
-		}, 1000, { leading: false, trailing: 1 }));
+		}, 1000, { leading: 1, trailing: 1 }));
 	</script>
 </body>
 </html>
