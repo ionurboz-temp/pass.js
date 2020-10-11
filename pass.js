@@ -1,4 +1,4 @@
-/**
+/**!
 *** Pass.js 1.0.1
 *** Passed events with Debounce or Throttle.
 *** http://pass-js.github.io
@@ -17,12 +17,16 @@
 { 
 	'use strict';
 
-	var pass = {};
+	var pass = {}; // Object for public APIs
 
 	/**
-	*** debounce function
+	*** debounce function, pass.debounce()
+	*** @public
+	*** @param	{Function}	callback	The callback to run
+	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
+	*** @param	{Object}		options		The settings object
+	*** @return	{Function}						Returns null if not apply callback
 	**/
-
 	pass.debounce = function(callback, wait, options) 
 	{
 		var context, args, result, call;
@@ -53,13 +57,19 @@
 			timeout = setTimeout(later, wait);
 
 			call && (result = callback.apply(context, args));
+
+			return result;
 		}
 	};
 
 	/**
-	*** throttle function
+	*** throttle function, pass.throttle()
+	*** @public
+	*** @param	{Function}	callback	The callback to run
+	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
+	*** @param	{Object}		options		The settings object
+	*** @return	{Function}						Returns null if not apply callback
 	**/
-
 	pass.throttle = function(callback, wait, options) 
 	{
 		var context, args, result;
@@ -111,11 +121,10 @@
 			}
 
 			return result;
-
 		};	  
 	};
 
-	// return
+	// return public APIs
 	return pass;
 
 })));
