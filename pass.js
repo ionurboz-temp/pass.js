@@ -20,7 +20,7 @@
 	var pass = {}; // Object for public APIs
 
 	/**
-	*** debounce function, pass.debounce()
+	*** Method debounce, pass.debounce()
 	*** @public
 	*** @param	{Function}	callback	The callback to run
 	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
@@ -63,7 +63,7 @@
 	};
 
 	/**
-	*** throttle function, pass.throttle()
+	*** Method throttle, pass.throttle()
 	*** @public
 	*** @param	{Function}	callback	The callback to run
 	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
