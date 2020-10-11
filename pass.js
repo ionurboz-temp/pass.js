@@ -28,7 +28,8 @@
 	*** @param	{number}		wait			The waiting time in (ms), [optional],	default: 200
 	*** @param	{Object}		options		The settings object, structure is: { leading: true, trailing: true }
 	***																leading: 	{boolean}	Trigger at the leading edge, [optional], default: true
-	***																trailing: {boolean} Trigger on the last edge, [optional], default: true
+	***																trailing: {boolean} Trigger on the last trailing edge, [optional], default: true
+	***																Note: If both are set to false, the last edge is triggered by default.
 	*** @return	{Function}						Returns null if not apply callback
 	**/
 	pass.debounce = function(callback, wait, options) 
@@ -70,8 +71,11 @@
 	*** Method throttle, pass.throttle()
 	*** @public
 	*** @param	{Function}	callback	The callback to run
-	*** @param	{number}		wait			The waiting time in ms, [optional],	default 200
-	*** @param	{Object}		options		The settings object
+	*** @param	{number}		wait			The waiting time in ms, [optional],	default: 200
+	*** @param	{Object}		options		The settings object, structure is: { leading: true, trailing: true }
+	***																leading: 	{boolean}	Trigger at the leading edge, [optional], default: true
+	***																trailing: {boolean} Trigger on the trailing edge, [optional], default: true
+	***																Note: If both are set to false, the last edge is triggered by default.
 	*** @return	{Function}						Returns null if not apply callback
 	**/
 	pass.throttle = function(callback, wait, options) 
