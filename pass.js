@@ -113,7 +113,6 @@
       {
         timeout = setTimeout(later, remaining);
       }
-
       return result;
     };    
   };
