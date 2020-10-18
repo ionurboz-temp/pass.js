@@ -104,4 +104,4 @@ If `trailing` is set to a value other than boolean `false`, it will fire at the 
 ```
 
 ## License
-The code is available under the [MIT License](LICENSE.md).
+The code is available under the [MIT License](LICENSE).
