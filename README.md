@@ -42,7 +42,7 @@ You can also use the [jsDelivr CDN](https://cdn.jsdelivr.net/gh/bozdev/pass.js@m
 <script src="https://cdn.jsdelivr.net/gh/bozdev/pass.js@1.0.1/dist/pass.min.js"></script>
 ```
 
-### 2. Initialize Bouncer
+### 2. Initialize `pass.js`
 
 ```html
 <script>
@@ -50,3 +50,57 @@ You can also use the [jsDelivr CDN](https://cdn.jsdelivr.net/gh/bozdev/pass.js@m
   pass.debounce(fn, 500);
 </script>
 ```
+
+## Options
+
+```javascript
+{ leading: mixed, trailing: mixed }
+```
+Default: `true`
+
+### 1. Leading
+
+#### Debounce
+If `leading` is set to a value other than boolean `false`, it will fire at the first edge of the event.
+
+```html
+<script>
+  var fn = function(){};
+  pass.debounce(fn, 500, { leading: true });
+</script>
+```
+
+#### Throttle
+If `leading` is set to a value other than boolean `false`, it will fire at the first edge of the event.
+
+```html
+<script>
+  var fn = function(){};
+  pass.throttle(fn, 500, { leading: false });
+</script>
+```
+
+### 2. Trailing
+
+#### Debounce
+If `trailing` is set to a value other than boolean `false`, it will fire at the last edge of the event.
+
+```html
+<script>
+  var fn = function(){};
+  pass.debounce(fn, 500, { leading: true, trailing: true });
+</script>
+```
+
+#### Throttle
+If `trailing` is set to a value other than boolean `false`, it will fire at the trailing edge of the event.
+
+```html
+<script>
+  var fn = function(){};
+  pass.throttle(fn, 500, { leading: false, trailing: true });
+</script>
+```
+
+## License
+The code is available under the [MIT License](LICENSE.md).
