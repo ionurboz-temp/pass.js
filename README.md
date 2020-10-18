@@ -1,6 +1,8 @@
 # pass.js
 Pass events through pure JavaScript Debounce or Throttle methods. 
 
+## Features
+
 ### No dependencies
 Prepared with pure javaScript codes. Thus, it is self-sufficient without the need for various frameworks such as jQuery.
 
