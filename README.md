@@ -2,6 +2,7 @@
 Pass events through pure JavaScript Debounce or Throttle methods. 
 
 <a href="https://pass-js.github.io"><img width="200" src="https://cdn.jsdelivr.net/gh/pass-js/pass-js.github.io@main/assets/logo.svg" /></a>
+Open the <a href="https://pass-js.github.io">project page</a> or <a href="https://pass-js.github.io">demos</a>. 
 
 ## Features
 
