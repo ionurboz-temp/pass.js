@@ -12,8 +12,6 @@ It was thought and prepared for the maximum scenarios with the least possible si
 ### 3. Multipurpose use
 With the "leading" and "trailing" features, you can decide you want to set the new event on any edge of the event. Moreover, it allows multiple applications.
 
-[View the Demo on CodePen →](https://codepen.io/ionurboz/pen/vYKKBrV)
-
 ## Getting Started
 You can find the compiled and ready-to-use code in the `dist` directory.
 
@@ -50,6 +48,7 @@ You can also use the [jsDelivr CDN](https://cdn.jsdelivr.net/gh/bozdev/pass.js@m
   pass.debounce(fn, 500);
 </script>
 ```
+[View the Demo on CodePen →](https://codepen.io/ionurboz/pen/vYKKBrV)
 
 ## Options
 
