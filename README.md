@@ -1,4 +1,7 @@
 # pass.js
+
+<a href="https://pass-js.github.io"><img width="200" src="https://cdn.jsdelivr.net/gh/pass-js/pass-js.github.io@main/assets/logo.svg" /></a>
+
 Pass events through pure JavaScript Debounce or Throttle methods. 
 
 ## Features
