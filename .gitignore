@@ -2,6 +2,7 @@
 .temp/*
 .vscode
 .vscode/*
+*.code-workspace
 .DS_Store
 .cache
 index.html
